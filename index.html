@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio | Estudiante de Sistemas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <span class="bracket">&lt;</span>Dev<span class="bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hola, soy</p>
+      <h1 class="hero-name">Tu Nombre</h1>
+      <h2 class="hero-title">
+        <span class="typed" id="typed-text"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">Estudiante de Licenciatura en Sistemas apasionado por construir proyectos web modernos y aprender nuevas tecnologías.</p>
+      <div class="hero-btns">
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-outline">Contactar</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="file-name">about.js</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">const</span> <span class="var">developer</span> = {
+  <span class="key">nombre</span>: <span class="str">"Tu Nombre"</span>,
+  <span class="key">carrera</span>: <span class="str">"Lic. en Sistemas"</span>,
+  <span class="key">semestre</span>: <span class="num">2</span>,
+  <span class="key">skills</span>: [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JS"</span>],
+  <span class="key">meta</span>: <span class="str">"Crecer como dev 🚀"</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" class="about section">
+    <div class="container">
+      <h2 class="section-title">Sobre <span class="highlight">mí</span></h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-placeholder">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>Soy estudiante de <strong>Licenciatura en Sistemas</strong> con pasión por el desarrollo web. Me fascina transformar ideas en interfaces funcionales y atractivas.</p>
+          <p>Actualmente estoy aprendiendo <strong>HTML, CSS y JavaScript</strong>, y me encuentro construyendo proyectos personales para reforzar mis conocimientos.</p>
+          <p>Busco crecer profesionalmente, colaborar en proyectos desafiantes y eventualmente contribuir a productos que generen impacto real.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Proyectos</span></div>
+            <div class="stat"><span class="stat-num">2do</span><span class="stat-label">Semestre</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Tecnologías</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="skills section">
+    <div class="container">
+      <h2 class="section-title">Mis <span class="highlight">Habilidades</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+          <h3>HTML5</h3>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+          <h3>CSS3</h3>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon js"><i class="fab fa-js-square"></i></div>
+          <h3>JavaScript</h3>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          <span class="skill-pct">60%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon git"><i class="fab fa-git-alt"></i></div>
+          <h3>Git</h3>
+          <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+          <span class="skill-pct">50%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="projects section">
+    <div class="container">
+      <h2 class="section-title">Mis <span class="highlight">Proyectos</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-img">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <div class="project-info">
+            <h3>Calculadora Científica</h3>
+            <p>Calculadora con operaciones matemáticas avanzadas, tema oscuro e historial de operaciones.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm"><i class="fab fa-github"></i> Código</a>
+              <a href="#" class="btn-sm btn-live"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <div class="project-info">
+            <h3>To-Do App</h3>
+            <p>Gestor de tareas con CRUD completo, filtros y persistencia en localStorage.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm"><i class="fab fa-github"></i> Código</a>
+              <a href="#" class="btn-sm btn-live"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <i class="fas fa-cloud-sun"></i>
+          </div>
+          <div class="project-info">
+            <h3>App del Clima</h3>
+            <p>Consulta el clima en tiempo real de cualquier ciudad usando la API de OpenWeatherMap.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm"><i class="fab fa-github"></i> Código</a>
+              <a href="#" class="btn-sm btn-live"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact section">
+    <div class="container">
+      <h2 class="section-title">Ponte en <span class="highlight">Contacto</span></h2>
+      <p class="contact-desc">¿Tienes algún proyecto o propuesta? ¡Escríbeme!</p>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:tu@email.com" class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>tu@email.com</span>
+          </a>
+          <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <span>linkedin.com/in/tu-perfil</span>
+          </a>
+          <a href="https://github.com/tu-usuario" target="_blank" class="contact-item">
+            <i class="fab fa-github"></i>
+            <span>github.com/tu-usuario</span>
+          </a>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <input type="text" placeholder="Tu nombre" required />
+          <input type="email" placeholder="Tu email" required />
+          <textarea placeholder="Tu mensaje" rows="4" required></textarea>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Hecho con <span class="heart">♥</span> por <strong>Tu Nombre</strong> · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
